@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Comments } from "./Comment";
 import { Form } from "./Form";
-import { User } from "./User";
+// import { User } from "./User";
 import { Navigation } from "./Navigation";
 import "./primitive.css";
 import "./style.css";
