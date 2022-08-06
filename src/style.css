@@ -1,0 +1,84 @@
+
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+/* Navigation */
+.icon {
+  font-size: 32px;
+  color: #0366ee;
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: #0250bc;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 24px;
+}
+
+.userInfo p{
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.userInfo span {
+  font-size: 1rem;
+  color: #555;
+}
+
+.profile-pic {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.comments {
+  margin-bottom: 200px;
+}
+
+.comment__text {
+  font-size: 1.6rem;
+  /* Avoid long words from leaving p element */
+  word-wrap: break-word;
+}
+
+.comment {
+  background-color: #e1e1e1;
+  padding: 2rem;
+  border-radius: 9px;
+  margin-bottom: 40px;
+}
+
+/* FORM */
+
+.form {
+  padding: 30px 50px 50px 50px;
+  background-color: #fff;
+  position: fixed;
+  width: 600px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  gap: 24px;
+  row-gap: 10px;
+}
+
+.comment-input {
+  grid-column: 1 / -1;
+}
+
+textarea {
+  resize: none;
+  height: 50px;
+}
