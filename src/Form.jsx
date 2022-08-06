@@ -7,7 +7,7 @@ export class Form extends React.Component {
     super(props);
     this.state = {
       comment: {
-        user: "",
+        user: this.props.user,
         text: "",
       },
     };
@@ -44,7 +44,10 @@ export class Form extends React.Component {
                 text: "",
               },
             });
-            this.props.handleSubmit(this.state.comment);
+            this.props.handleSubmit({
+              text: this.state.comment.text,
+              user: this.props.user,
+            });
             // Fix resizing on submit
             // autosize(document.querySelector(".comment-input"));
           }}
